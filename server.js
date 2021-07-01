@@ -8,6 +8,7 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended:false }))
 app.use(bodyParser.json())
 
+//incluyo las rutas del archivo de apis
 app.use('/api/afiliados', AfiliadoApiRest)
 
 mongoose.connect(
